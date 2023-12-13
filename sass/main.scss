@@ -1,1 +1,22 @@
+@import "../node_modules/bootstrap/scss/functions";
+// global
+$link-decoration: null;
+
+// Theme Colors
+$primary: (#495E63);
+$secondary: (#E39161);
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Custom colors
+$custom-colors: (
+    "blue": (#92CCCE),
+    "red": (#873D48),
+    "green": (#A2D729),
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
