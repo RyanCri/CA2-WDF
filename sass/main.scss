@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Fredericka+the+Great&family=Glegoo:wght@400;700&family=Ibarra+Real+Nova&family=Inter:wght@300;400&display=swap');
 // global
 $link-decoration: null;
-
+$enable-rounded: true;
 // Theme Colors
 $primary: (#495E63);
 $secondary: (#E39161);
@@ -38,6 +38,16 @@ $custom-colors: (
 // ibarra real nova
 .ibarra{
     font-family: 'Ibarra Real Nova';
+}
+
+.no-underline{
+    text-decoration: none;
+}
+
+.main-nav{
+    position: fixed;
+    background-color: transparent;
+    transition: background-color 0.3s;
 }
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
