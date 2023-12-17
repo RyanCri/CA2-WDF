@@ -82,17 +82,17 @@
                 <div class="col-12 d-flex justify-content-center text-light">
                     <h1 class="Glegoo title fs-1">Our Locations</h1>
                 </div>
-                <div class="location-showcase d-flex">
+                <div class="location-showcase d-flex" id="loc-head-rath">
                     <div class="col-8 bg-secondary d-flex justify-content-center">
                         <h2 class="my-1 text-light title fs-1">RATHMINES</h2>
                     </div>
-                    <button class="col-4 bg-dark bg-gradient d-flex justify-content-center">
+                    <button type="button" class="col-4 bg-dark bg-gradient d-flex justify-content-center" onclick="toggleLocationRath()">
                         <h2 class="my-1 text-light title fs-1">INCHICORE</h2>
                     </button>
 
                 </div>
-                <div class="time-map d-flex border border-3 border-secondary">
-                    <div class="col-6 border-end border-3 border-secondary" style="background-image: url(images/rathmines-min.jpeg); background-size: cover;">
+                <div class="time-map d-flex border border-3 border-secondary" id="location-rath">
+                    <div class="col-6 border-end border-3 border-secondary bg-img-cvr time-rath">
                         <div class="text-center loc-info text-light py-4">
                             <h4>Monday to Thursday</h4>
                             <p>8am - 5pm</p>
@@ -111,10 +111,42 @@
                             <h4>Rathmines, Dublin 6, D06 HX53</h4>
                         </div>
                     </div>
-                    <div class="col-6" style="background-image: url(images/rathmines-map.png);">
+                    <div class="col-6 bg-img-cvr map-rath">
                     </div>
                 </div>
             
+                <div class="location-showcase d-flex d-none" id="loc-head-inch">
+                    <button type="button" class="col-4 bg-dark bg-gradient d-flex justify-content-center" onclick="toggleLocationInch()">
+                        <h2 class="my-1 text-light title fs-1">RATHMINES</h2>
+                    </button>
+                    <div class="col-8 bg-secondary d-flex justify-content-center">
+                        <h2 class="my-1 text-light title fs-1">INCHICORE</h2>
+                    </div>
+
+                </div>
+                <div class="time-map d-flex border border-3 border-secondary d-none" id="location-inch">
+                    <div class="col-6 border-end border-3 border-secondary bg-img-cvr time-inch">
+                        <div class="text-center loc-info text-light py-4">
+                            <h4>Monday to Thursday</h4>
+                            <p>8am - 5pm</p>
+                            <br>
+                            <h4>Friday & Saturday</h4>
+                            <p>6am - 6pm</p>
+                            <br>
+                            <h4>Sunday</h4>
+                            <p>9am - 5pm</p>
+                            <br>    
+                            <h4>089 986 0730</h4>
+                            <br>
+                            <h4>hi@greenvilledeli.ie</h4>
+                            <br>
+                            <h4>5A Tyrconnell Rd</h4>
+                            <h4>Inchicore, Dublin 8, D08 R8Y2</h4>
+                        </div>
+                    </div>
+                    <div class="col-6 bg-img-cvr map-inch">
+                    </div>
+                </div>
             </div>
         </div>
     </section>

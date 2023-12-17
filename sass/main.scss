@@ -50,6 +50,26 @@ $custom-colors: (
     transition: background-color 0.3s;
 }
 
+.map-rath{
+    background-image: url(../images/rathmines-map.png);
+}
+
+.map-inch{
+    background-image: url(../images/ichicore-map.png); 
+}
+
+.time-rath{
+    background-image: url(../images/rathmines-min.jpeg);
+}
+
+.time-inch{
+    background-image: url(../images/inchicore-min.jpeg);
+}
+
+.bg-img-cvr{
+    background-size: cover;
+}
+
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
