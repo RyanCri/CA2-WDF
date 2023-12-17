@@ -70,6 +70,11 @@ $custom-colors: (
     background-size: cover;
 }
 
+.ig-img{
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
